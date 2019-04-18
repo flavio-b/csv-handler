@@ -1,3 +1,4 @@
+require 'csv'
 require "csv_handler/version"
 
 module CsvHandler
