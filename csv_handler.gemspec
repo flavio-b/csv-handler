@@ -1,7 +1,6 @@
+# frozen_string_literal: true
 
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "csv_handler/version"
+require_relative 'lib/csv_handler/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "csv_handler"
@@ -9,23 +8,16 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Flávio"]
   spec.email         = []
 
-  spec.summary       = %q{Template handler for CSV}
-  spec.description   = %q{}
+  spec.summary       = "Template handler for CSV"
+  spec.description   = ""
   spec.homepage      = ""
   spec.required_ruby_version = ">= 2.6.0"
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = ""
 
-    # spec.metadata["homepage_uri"] = spec.homepage
-    # spec.metadata["source_code_uri"] = ""
-    # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+  # spec.metadata["homepage_uri"] = spec.homepage
+  # spec.metadata["source_code_uri"] = ""
+  # spec.metadata["changelog_uri"] = ""
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
