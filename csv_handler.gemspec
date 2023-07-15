@@ -6,12 +6,14 @@ require "csv_handler/version"
 Gem::Specification.new do |spec|
   spec.name          = "csv_handler"
   spec.version       = CsvHandler::VERSION
-  spec.authors       = ["flaviobombonatti"]
+  spec.authors       = ["Flavio"]
   spec.email         = []
 
   spec.summary       = %q{Template handler for CSV}
   spec.description   = %q{}
-  spec.homepage      = "https://gitlab.com/flavio_b/csv-handler"
+  spec.homepage      = "https://github.com/flavio-b/csv-handler"
+
+  spec.required_ruby_version = '>= 2.6'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -19,7 +21,7 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://gitlab.com/flavio_b/csv-handler"
+    spec.metadata["source_code_uri"] = spec.homepage
     # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
